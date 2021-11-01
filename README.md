@@ -13,6 +13,11 @@ To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing 
 
 ## Approach
 
+understand; 
+    * canvass
+    * isDrawing 
+    * flag
+
 
 ![image](https://user-images.githubusercontent.com/25634451/139657132-5a30af57-cdb8-4d06-ab8c-5aa7d3ca92b2.png)
 
