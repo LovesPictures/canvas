@@ -8,8 +8,8 @@ Commit Date: 1st November 2021
 ## Guide
 
 xxx
-
-<!-- image example  ![image](https://user-images.githubusercontent.com/25634451/139131376-f6266fd8-ceed-4380-9668-d396950ad84b.png) -->
+![image](https://user-images.githubusercontent.com/25634451/139657132-5a30af57-cdb8-4d06-ab8c-5aa7d3ca92b2.png)
+event listener: mousemove - console 
 
 <!-- code example - tabulate -->
 ### long version of the code 
@@ -20,7 +20,7 @@ xxx
 
 ## Approach
 
-To use Use HTML to make and interactive canvas
+To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing screen
  
 ## Useful links
 * [Basic usage of canvas - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) 
