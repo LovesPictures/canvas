@@ -9,11 +9,10 @@ Commit Date: 1st November 2021
 
 ![image](https://user-images.githubusercontent.com/25634451/139657132-5a30af57-cdb8-4d06-ab8c-5aa7d3ca92b2.png)
 
-###event listener: mousemove - console 
-
 <!-- code example - tabulate -->
-### long version of the code 
-     xxx
+### event listener: mousemove - console 
+
+    canvas.addEventListener('mousemove', draw);
 
 <!-- code example -->
 
