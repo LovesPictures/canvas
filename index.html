@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+
+<body>
+<!-- canvass element and size-->
+<canvas id="draw" width="800" height="800"></canvas>
+
+
+<script>
+// get the canvass
+const canvas = document.querySelector('#draw');
+
+// draw on the 'context e.g ctx' in canvas HTML5 - this can be 2D or 3D in video games
+const ctx = canvas.getContext('2d');
+
+// resize the canvas to the width of the window
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+//base settings; line, linecap and line weight 
+ctx.strokeStyle = '#BADA55';          // colour
+ctx.lineJoin = 'round';               // when a line meets another line what shape should it be  
+ctx.lineCap = 'round';                // end of the line shape 
+ctx.lineWidth = 20;                  //line width 
+// ctx.globalCompositeOperation = 'multiply';
+
+
+//varialbes for starting the line
+let isDrawing = false;                // creare a 0 indicatior so that only when curser isPressed does it create a lone 
+let lastX = 0;                        // starting ponit of the cursor 
+let lastY = 0;                        // ending point of the cursor 
+let hue = 0;                          // colour selector variables
+let direction = true;                 // colour selector variables
+
+
+// call this function to start the draw when the mouse is moved on the canvass, with an event
+function draw(e) {
+  if (!isDrawing) return               // stop the function form running if mouse is not down
+     console.log (e)                   // listen for the event
+//select colour
+ctx.strokeStyle =`hsl(${hue}, 100%, 50%)`;
+
+//start a path
+ctx.beginPath();
+// start form 
+ctx.moveTo(lastX,lastY);                // ? 
+// go to 
+ctx.lineTo(e.offsetX, e.offsetY);       //from the event 
+ctx.stroke();
+
+// update the lastX and LastY postition 
+// destructuring an array short line version 
+[lastX, lastY] = [e.offsetX, e.offsetY];
+//long version
+// lastX = e.offsetX;
+// lastY = e.offsetY;
+
+///colour
+hue++;                                     // increment the colours through 360 
+   if (hue >= 360){                        // reset the colour to zero at thend f the range
+    hue = 0;
+   }
+   //increment lineWidth from 0 to 100, then reverse lindWidith 
+     if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+       direction = !direction;
+  }
+//increment or decrement the lineWidth 
+    if (direction) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
+
+
+}
+// click and drag functionality 
+// on mousedown the X & Y position is updated 
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true; // draw
+// update
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
+
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', () => isDrawing = false);  // stop drawing 
+canvas.addEventListener('mouseout', () => isDrawing = false);  // mouse has left the drawing window 
+  
+
+  
+  
+  </script>
+
+
+<style>
+  html, body {
+    margin: 0;
+  }
+</style>
+
+</body>
+</html>
