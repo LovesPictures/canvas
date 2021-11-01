@@ -9,7 +9,7 @@ Commit Date: 1st November 2021
 
 To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing screen
 
-![image](https://user-images.githubusercontent.com/25634451/139662701-a1cbac74-e964-4fa3-9011-0ec2f09c82b6.png)
+![image](https://user-images.githubusercontent.com/25634451/139663258-5e15af26-0844-494b-8b07-6e3844e31fe7.png)
 
 ## Approach
 
