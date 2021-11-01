@@ -10,16 +10,42 @@ Commit Date: 1st November 2021
 ![image](https://user-images.githubusercontent.com/25634451/139657132-5a30af57-cdb8-4d06-ab8c-5aa7d3ca92b2.png)
 
 <!-- code example - tabulate -->
-### event listener: mousemove - console 
+### event listener: mousemove
 
     canvas.addEventListener('mousemove', draw);
-
 <!-- code example -->
 
+![image](https://user-images.githubusercontent.com/25634451/139660180-5f66fbef-388c-458b-866e-93b6e8ce9543.png)
+<!-- code example - tabulate -->
+### update mousemove event listener  
+
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true; 
+  // update
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
 
 ## Approach
 
 To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing screen
+
+![image](https://user-images.githubusercontent.com/25634451/139657132-5a30af57-cdb8-4d06-ab8c-5aa7d3ca92b2.png)
+
+<!-- code example - tabulate -->
+### event listener: mousemove
+
+    canvas.addEventListener('mousemove', draw);
+<!-- code example -->
+
+![image](https://user-images.githubusercontent.com/25634451/139660180-5f66fbef-388c-458b-866e-93b6e8ce9543.png)
+<!-- code example - tabulate -->
+### update mousemove event listener  
+
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true; 
+  // update
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
  
 ## Useful links
 * [Basic usage of canvas - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) 
@@ -29,7 +55,7 @@ To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing 
 
 <!-- list of questions -->
 <!-- 
-xx
+What is destructuring an array  - a shortened version of an array 
 xx
 xx
 
