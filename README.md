@@ -37,11 +37,13 @@ To use HTML5 canvass fundementals and vanilla JS to make an interactive drawing 
 * [25 Ridiculously Impressive HTML5 Canvas Experiments](https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210) 
 * [125 Open Source HTML5 Canvas Software Projects](https://opensourcelibs.com/libs/html5-canvas) 
 * [Mother-effing HSL](https://mothereffinghsl.com/)  programmatically selecting colours!
-
+* [CanvasRenderingContext2D.globalCompositeOperation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)  
 
 <!-- list of questions -->
 <!-- 
 What is destructuring an array  - a shortened version of an array 
+what are the different blend modes - // ctx.globalCompositeOperation = 'multiply'; 
+Search: global Composite Operator 
 xx
 xx
 
